@@ -18,3 +18,4 @@ This task demonstrates the implementation of real-time communication, frontend a
 
 #OUTPUT
 
+<img width="1201" height="704" alt="Image" src="https://github.com/user-attachments/assets/dc6351b7-1b74-4a40-9229-56ab56257213" />
