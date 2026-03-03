@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="chat.css"/>
+</head>
+<body>
+
+  <!-- Join Screen -->
+  <div id="join-screen">
+    <h1>💬 Chat App</h1>
+    <p>Enter a username to join</p>
+    <input id="username-input" type="text" placeholder="Your username..." maxlength="20"/>
+    <button id="join-btn">Join Chat</button>
+  </div>
+
+  <!-- Chat Screen -->
+  <div id="chat-screen">
+
+    <div class="chat-header">
+      <h2>💬 Chat App</h2>
+      <div class="online-badge">
+        <span class="online-dot"></span>
+        <span id="user-count">0</span> online
+      </div>
+    </div>
+
+    <div id="messages"></div>
+
+    <div class="chat-input">
+      <input id="msg-input" type="text" placeholder="Type a message..."/>
+      <button id="send-btn">Send</button>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
